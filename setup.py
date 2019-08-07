@@ -19,7 +19,7 @@ setup(
     license='MIT',
     packages=find_packages(exclude=['test.*', 'test']),
     package_data={},
-    keywords='pypise pyse selenium testcase',
+    keywords='pypise pyse selenium testcase unittest',
     install_requires=[],
     classifiers=[
         'Intended Audience :: Developers',
