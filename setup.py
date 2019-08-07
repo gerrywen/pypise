@@ -1,27 +1,26 @@
 # coding=utf-8
-import re
-import ast
-from setuptools import setup, find_packages
+import io
 
-_version_re = re.compile(r'__version__\s+=\s+(.*)')
+from pyse import __version__
+from setuptools import find_packages, setup
 
-with open('pyse/__init__.py', 'rb') as f:
-    version = str(ast.literal_eval(_version_re.search(
-        f.read().decode('utf-8')).group(1)))
+with io.open("README.md", encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='pypise',
-    version=version,
-    url='https://github.com/gerrywen/pypise.git/',
-    license='MIT',
+    version=__version__,
+    description='WebUI automation testing framework based on Selenium and unittest.',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='gerrywen',
     author_email='blog@gerrywen.com',
-    description='WebUI automation testing framework based on Selenium and unittest ',
-    long_description=__doc__,
-    packages=find_packages(),
-    include_package_data=True,
-    zip_safe=False,
-    install_requires=['selenium>=3.12.0', 'parameterized>=0.6.1'],
+    url='https://github.com/gerrywen/pypise.git',
+    license='MIT',
+    packages=find_packages(exclude=['test.*', 'test']),
+    package_data={},
+    keywords='pypise pyse selenium testcase',
+    install_requires=[],
     classifiers=[
         'Intended Audience :: Developers',
         'Operating System :: Ubuntu',
