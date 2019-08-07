@@ -20,11 +20,11 @@
 from .running.test_runner import TestRunner
 from .pyse_api import WebDriver
 from .case import TestCase
-from .driver import Pyse 
+from .driver import Pyse
 
-__author__ = "bugmaster"
+__author__ = "gerrywen"
 
-__version__ = "0.0.1"
+__version__ = '0.0.1'
 
 '''
 0.0.2 version update:
