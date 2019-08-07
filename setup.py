@@ -12,7 +12,7 @@ with open('pyse/__init__.py', 'rb') as f:
 setup(
     name='pypise',
     version=version,
-    url='https://github.com/gerrywen/pyse.git/',
+    url='https://github.com/gerrywen/pypise.git/',
     license='MIT',
     author='gerrywen',
     author_email='blog@gerrywen.com',
