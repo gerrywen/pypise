@@ -1,0 +1,17 @@
+*.pyc
+.DS_Store
+
+# idea
+.DS_Store
+*/.DS_Store
+/.idea
+/.vscode
+/.vagrant
+
+# 项目忽略配置
+*.pyc
+*.log
+report
+build
+dist
+pyse.egg-info
