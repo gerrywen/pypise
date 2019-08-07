@@ -22,14 +22,9 @@ setup(
     keywords='pypise pypise selenium testcase unittest',
     install_requires=[],
     classifiers=[
-        'Intended Audience :: Developers',
-        'Operating System :: Ubuntu',
-        'Operating System :: Microsoft :: Windows',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7'
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        'Topic :: Software Development :: Libraries ::Testing'
     ],
     entry_points={
         'console_scripts': [
