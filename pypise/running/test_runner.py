@@ -8,7 +8,7 @@ import unittest
 class TestRunner(object):
     ''' Run test '''
 
-    def __init__(self, cases="./",title="pyse Test Report",description="Test case execution"):
+    def __init__(self, cases="./",title="pypise Test Report",description="Test case execution"):
         self.cases = cases
         self.title = title
         self.des = description
@@ -31,7 +31,7 @@ class TestRunner(object):
     def debug(self):
         tests = unittest.defaultTestLoader.discover(self.cases, pattern='test*.py', top_level_dir=None)
         runner = unittest.TextTestRunner(verbosity=2)
-        print("pyse test start:")
+        print("pypise test start:")
         runner.run(tests)
         print("test end!!!")
 

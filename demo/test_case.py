@@ -1,4 +1,4 @@
-from pyse import Pyse, TestCase, TestRunner
+from pypise import Pypise, TestCase, TestRunner
 from parameterized import parameterized
 
 
@@ -8,14 +8,14 @@ class BaiduTest(TestCase):
     @classmethod
     def setUpClass(cls):
         """ Setting browser driver, Using chrome by default."""
-        cls.driver = Pyse("chrome")
+        cls.driver = Pypise("chrome")
         cls.timeout = 15  # You can customize timeout time
 
     """
     A simple test
     """
     def test_case(self):
-        """ baidu search key : pyse """
+        """ baidu search key : pypise """
         self.open("https://www.baidu.com/")
         self.move_to_element("link_text=>设置")
         self.click("link_text=>搜索设置")
@@ -29,12 +29,12 @@ class BaiduTest(TestCase):
     used parameterized test
     """
     @parameterized.expand([
-        (1, 'pyse'),
+        (1, 'pypise'),
         (2, 'selenium'),
         (3, 'unittest'),
     ])
     def test_baidu(self,name,search_key):
-        ''' baidu search key : pyse '''
+        ''' baidu search key : pypise '''
         self.open("https://www.baidu.com")
         self.clear("id=>kw")
         self.type("id=>kw", search_key)

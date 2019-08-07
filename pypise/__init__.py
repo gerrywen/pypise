@@ -18,9 +18,9 @@
 # under the License.
 
 from .running.test_runner import TestRunner
-from .pyse_api import WebDriver
+from .pypise_api import WebDriver
 from .case import TestCase
-from .driver import Pyse
+from .driver import Pypise
 
 __author__ = "gerrywen"
 

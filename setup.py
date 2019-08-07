@@ -1,7 +1,7 @@
 # coding=utf-8
 import io
 
-from pyse import __version__
+from pypise import __version__
 from setuptools import find_packages, setup
 
 with io.open("README.md", encoding='utf-8') as f:
@@ -19,7 +19,7 @@ setup(
     license='MIT',
     packages=find_packages(exclude=['test.*', 'test']),
     package_data={},
-    keywords='pypise pyse selenium testcase unittest',
+    keywords='pypise pypise selenium testcase unittest',
     install_requires=[],
     classifiers=[
         'Intended Audience :: Developers',
@@ -33,7 +33,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'pyse=pyse.Pyse:main'
+            'pypise=pypise.Pypise:main'
         ]
     }
 )

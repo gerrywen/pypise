@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
-def Pyse(browser):
+def Pypise(browser):
     """
     Run class initialization method, the default is proper
     to drive the Firefox browser. Of course, you can also

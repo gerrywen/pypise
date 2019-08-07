@@ -10,7 +10,7 @@ import time
 
 class WebDriver(object):
     """
-        Pyse framework for the main class, the original
+        Pypise framework for the main class, the original
     selenium provided by the method of the two packaging,
     making it easier to use.
     """

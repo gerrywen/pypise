@@ -1,14 +1,14 @@
 import unittest
-from .pyse_api import WebDriver
+from .pypise_api import WebDriver
 from time import sleep
-from .driver import Pyse
+from .driver import Pypise
 
 
 class TestCase(unittest.TestCase, WebDriver):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = Pyse("chrome")
+        cls.driver = Pypise("chrome")
         cls.timeout = 10
 
     @classmethod
